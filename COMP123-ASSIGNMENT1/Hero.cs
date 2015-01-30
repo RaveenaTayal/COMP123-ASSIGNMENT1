@@ -1,5 +1,6 @@
 ﻿/*
  *Author: Raveena Tayal
+ *Student ID: 300813330
  *Last Modified on 1/30/2015
  *Program Description: Create a Hero class with strength, speed, health and name properties. Assign a random 
  *                     number between 1 and 100 (both inclusive) to the abilities and display them using a method.
@@ -7,6 +8,17 @@
  *                     console. Implement the class by creating a new hero object and call show() and fight() 
  *                     methods.
  *Revision History: 
+ *                 Revision: 8
+ *                 Modified: 1/30/2015(5:24 pm)
+ *                 Author: Raveena Tayal
+ *                 Log Entry: Extra features added by creating 3 methods to check abilities of hero and 
+ *                 modifying the output
+ *                 -----------------------------------------------------------------------
+ *                 Revision: 7
+ *                 Modified: 1/30/2015(4:46 pm)
+ *                 Author: Raveena Tayal
+ *                 Log Entry: Modified Program.cs 
+ *                 -----------------------------------------------------------------------
  *                 Revision: 6
  *                 Modified: 1/30/2015(4:40 pm)
  *                 Author: Raveena Tayal
@@ -85,13 +97,12 @@ namespace COMP123_ASSIGNMENT1
             if (hitAttempt())
             {
                 damage = hitDamage(); //Calling hitDamage method to calculate damage 
-                Console.WriteLine("Yay!!!!! /n Hit Attempt successful!!!!!");
+                Console.WriteLine("Yay!!!!! \n Hit Attempt successful!!!!!");
                 Console.WriteLine("Damage caused to the target: {0}", damage);
             }
             else
             {
                 Console.WriteLine("Oops!!!!! Hit Attempt unsuccessful!!!!!");
-                Console.WriteLine("Hero missed the target!!!!!");
                 Console.WriteLine("No damage caused to the target");
             }
         }
@@ -120,16 +131,59 @@ namespace COMP123_ASSIGNMENT1
             return damage;
         }
 
+        //---Creating a method to check strength of hero 
+        public void checkStrength()
+        {
+            if(this.strength<50)
+            {
+                Console.WriteLine("Watch out. Your hero is not strong enough!!!!");
+            }
+            else
+            {
+                Console.WriteLine("Wow !!! How strong your hero is!!");
+            }
+        }
+
+        //---Creating a method to check speed of hero 
+        public void checkSpeed()
+        {
+            if (this.speed < 50)
+            {
+                Console.WriteLine("Omg!!! Your hero is so slow!!");
+            }
+            else
+            {
+                Console.WriteLine("Amazing speed!!!");
+            }
+        }
+        
+        // Creating a method to check health of hero
+        public void checkHealth()
+        {
+            if (this.health < 40)
+            {
+                Console.WriteLine("Look. Your hero isn't healthy enough!!!");
+            }
+            else
+            {
+                Console.WriteLine("Hero is quite healthy!!!");
+            }
+        }
+
         //---Creating a method to display ablities of hero
         public void show()
         {
-            Console.WriteLine("-----------------------------------");
-            Console.WriteLine("Yay!!!{0} is the hero !!!!",this.name);
-            Console.WriteLine("{0} has followin' abilities::", this.name);
-            Console.WriteLine("        Strength: {0}", this.strength);
-            Console.WriteLine("        Speed: {0}", this.speed);
-            Console.WriteLine("        Health: {0}", this.health);
-            Console.WriteLine("-----------------------------------");
+
+            Console.WriteLine("\n*******************************\n");
+            Console.WriteLine("Yay!!!{0} is the hero !!!!\n", this.name);
+            Console.WriteLine("{0} has followin' abilities::\n", this.name);
+            Console.Write("  Strength: {0}  --->  ", this.strength);
+            checkStrength();
+            Console.Write("  Speed: {0}  --->  ", this.speed);
+            checkSpeed();
+            Console.Write("  Health: {0}  --->  ", this.health);
+            checkHealth();
+            Console.WriteLine("\n*******************************\n");
         }
     }
 }

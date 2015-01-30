@@ -10,7 +10,7 @@ namespace COMP123_ASSIGNMENT1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Suggest a name for your hero !!!");
+            Console.Write("Suggest a name for your hero: ");
             String name = Console.ReadLine(); 
 
             //---Instantiating an object for Hero class---------------------
@@ -20,7 +20,7 @@ namespace COMP123_ASSIGNMENT1
             hero.show();
             hero.fight();
 
-            Console.WriteLine("Press any key to exit!!!");
+            Console.WriteLine("\nPress any key to exit");
             Console.ReadKey();
         }
     }
