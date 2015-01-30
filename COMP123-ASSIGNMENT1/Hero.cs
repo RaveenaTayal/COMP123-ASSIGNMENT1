@@ -1,4 +1,39 @@
-﻿using System;
+﻿/*
+ *Author: Raveena Tayal
+ *Last Modified on 1/30/2015
+ *Program Description: Create a Hero class with strength, speed, health and name properties. Assign a random 
+ *                     number between 1 and 100 (both inclusive) to the abilities and display them using a method.
+ *                     Also determine the damage if hero hits the target and display appropriate messages to the 
+ *                     console. Implement the class by creating a new hero object and call show() and fight() 
+ *                     methods.
+ *Revision History: 
+ *                 Revision: 5
+ *                 Modified: 1/30/2015
+ *                 Author: Raveena Tayal
+ *                 Log Entry: Added show() method 
+ *                 -----------------------------------------------------------------------
+ *                 Revision: 4
+ *                 Modified: 1/30/2015
+ *                 Author: Raveena Tayal             
+ *                 Log Entry: Added fight(), hitAttempt() and hitDamage() methods
+ *                 -----------------------------------------------------------------------
+ *                 Revision: 3
+ *                 Modified: 1/30/2015
+ *                 Author: Raveena Tayal
+ *                 Log Entry: Modified generateAbilities method to include 100
+ *                 -----------------------------------------------------------------------
+ *                 Revision: 2
+ *                 Modified: 1/30/2015
+ *                 Author: Raveena Tayal
+ *                 Log Entry: Added generateAbilities method to assign values to abilities
+ *                 -----------------------------------------------------------------------
+ *                 Revision: 1
+ *                 Modified: 1/30/2015
+ *                 Author: Raveena Tayal
+ *                 Log Entry: Created Hero class with properties and constructor
+ *                 -----------------------------------------------------------------------
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -78,6 +113,18 @@ namespace COMP123_ASSIGNMENT1
             //Calculating damage by multiplyin' strength by number between 1 and 6
             int damage = this.strength * ran.Next(1, 7);
             return damage;
+        }
+
+        //---Creating a method to display ablities of hero
+        public void show()
+        {
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("Yay!!!{0} is the hero !!!!",this.name);
+            Console.WriteLine("{0} has followin' abilities::", this.name);
+            Console.WriteLine("        Strength: {0}", this.strength);
+            Console.WriteLine("        Speed: {0}", this.speed);
+            Console.WriteLine("        Health: {0}", this.health);
+            Console.WriteLine("-----------------------------------");
         }
     }
 }
