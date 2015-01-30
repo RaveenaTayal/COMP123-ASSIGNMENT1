@@ -19,6 +19,9 @@ namespace COMP123_ASSIGNMENT1
             //---Calling show() and fight() methods ------------------------
             hero.show();
             hero.fight();
+
+            Console.WriteLine("Press any key to exit!!!");
+            Console.ReadKey();
         }
     }
 }
