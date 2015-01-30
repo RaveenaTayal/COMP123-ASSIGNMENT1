@@ -7,28 +7,33 @@
  *                     console. Implement the class by creating a new hero object and call show() and fight() 
  *                     methods.
  *Revision History: 
+ *                 Revision: 6
+ *                 Modified: 1/30/2015(4:40 pm)
+ *                 Author: Raveena Tayal
+ *                 Log Entry: Implemented Hero class by creating hero object in Program.cs 
+ *                 -----------------------------------------------------------------------
  *                 Revision: 5
- *                 Modified: 1/30/2015
+ *                 Modified: 1/30/2015(4:29 pm)
  *                 Author: Raveena Tayal
  *                 Log Entry: Added show() method 
  *                 -----------------------------------------------------------------------
  *                 Revision: 4
- *                 Modified: 1/30/2015
+ *                 Modified: 1/30/2015(3:38 pm)
  *                 Author: Raveena Tayal             
  *                 Log Entry: Added fight(), hitAttempt() and hitDamage() methods
  *                 -----------------------------------------------------------------------
  *                 Revision: 3
- *                 Modified: 1/30/2015
+ *                 Modified: 1/30/2015(3:18 pm)
  *                 Author: Raveena Tayal
  *                 Log Entry: Modified generateAbilities method to include 100
  *                 -----------------------------------------------------------------------
  *                 Revision: 2
- *                 Modified: 1/30/2015
+ *                 Modified: 1/30/2015(3:16 pm)
  *                 Author: Raveena Tayal
  *                 Log Entry: Added generateAbilities method to assign values to abilities
  *                 -----------------------------------------------------------------------
  *                 Revision: 1
- *                 Modified: 1/30/2015
+ *                 Modified: 1/30/2015(3:13 pm)
  *                 Author: Raveena Tayal
  *                 Log Entry: Created Hero class with properties and constructor
  *                 -----------------------------------------------------------------------
