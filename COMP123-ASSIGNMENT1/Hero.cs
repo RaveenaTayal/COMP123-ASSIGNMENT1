@@ -111,7 +111,7 @@ namespace COMP123_ASSIGNMENT1
         private bool hitAttempt()
         {
             //Generating a random number between 1 and 100 (both inclusive)
-            double hitTime = ran.Next(1, 101);
+            int hitTime = ran.Next(1, 101);
             //Checking if hitTime is less than or equal to 20
             if (hitTime<= 20)
             {
