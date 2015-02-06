@@ -1,6 +1,5 @@
 ﻿/*
  *Author: Raveena Tayal
- *Student ID: 300813330
  *Last Modified on 1/30/2015
  *Program Description: Create a Hero class with strength, speed, health and name properties. Assign a random 
  *                     number between 1 and 100 (both inclusive) to the abilities and display them using a method.
